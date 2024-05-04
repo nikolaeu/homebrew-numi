@@ -3,19 +3,19 @@ class NumiCli < Formula
   homepage "https://numi.app"
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://v4.numi.app/v4/v0.9/numi-cli-v0.9-x86_64-apple-darwin.tar.gz"
-      sha256 "13a6ab53e44d30c2f2861423959cdd5d8e1b818f6a98b47db583000397be5350"
+      url "https://s3.numi.app/v4/v0.11.0/numi-cli-v0.11.0-x86_64-apple-darwin.tar.gz"
+      sha256 "3cbf4d17286ca9961f063f8be255f48b7a104cc3fafd616bf7c3149154ff711c"
     elsif Hardware::CPU.arm?
-      url "https://v4.numi.app/v4/v0.9/numi-cli-v0.9-aarch64-apple-darwin.tar.gz"
-      sha256 "4399b9b21ba14322933eec832f88736833844ef9fb3c1e0eb62659d3e87246f0"
+      url "https://s3.numi.app/v4/v0.11.0/numi-cli-v0.11.0-aarch64-apple-darwin.tar.gz"
+      sha256 "59cbabef88c5bc728638a3a5872c6ee1bd0c343a79ddd88d6c3fc494396bc0e6"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://v4.numi.app/v4/v0.9/numi-cli-v0.9-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1ad335f4438369c83bb58187bfb6057683bb4ba2862c244c08f2f57a14262bc7"
+      url "https://s3.numi.app/v4/v0.11.0/numi-cli-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "520325500b000d1e7cdfb09d8a0f8dc5a54ae9bbf4ab42f8c1e2f88f787066e2"
     elsif Hardware::CPU.arm?
-      url "https://v4.numi.app/v4/v0.9/numi-cli-v0.9-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7c5a3a534ba80579834ccf5b1a56af9a5c912980416be4bb458a242f6fb0ef55"
+      url "https://s3.numi.app/v4/v0.11.0/numi-cli-v0.11.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a728a83c2f1aab065257e78a923c379070de0a43befb2a1ef768c18105b777d9"
     end
   end
   def install
